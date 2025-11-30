@@ -1,0 +1,94 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <StackPanel Spacing="10">
+                <Button Content="Текст"></Button>
+            </StackPanel>
+        </Border>
+    </Design.PreviewWith>
+    
+    <Style Selector="Button">
+        <Setter Property="Width" Value="150" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Background" Value="{DynamicResource PrimaryCl}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontDarkCl}"></Setter>
+        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        <Setter Property="CornerRadius" Value="10"></Setter>
+        <Setter Property="RenderTransform" Value="scale(1)"></Setter>
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Transitions">
+            <Transitions>
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.1" Easing="QuadraticEaseOut" />
+                <DoubleTransition Property="Width" Duration="0:0:0:1" Easing="QuadraticEaseOut"></DoubleTransition>
+            </Transitions>
+        </Setter>
+        <Style Selector="^:pointerover">
+            <Style Selector="^:pointerover /template/ ContentPresenter">
+                <Setter Property="Background" Value="{DynamicResource PrimaryMediumLightCl}"></Setter>
+                <Setter Property="Foreground" Value="{DynamicResource FontDarkCl}"></Setter>
+            </Style>
+            <Setter Property="RenderTransform" Value="scale(1.007)"></Setter>
+        </Style>
+        <Style Selector="^:pressed">
+            <Setter Property="RenderTransform" Value="scale(0.993) translateY(1px)"></Setter>
+            <Style Selector="^:pressed /template/ ContentPresenter">
+                <Setter Property="Background" Value="{DynamicResource PrimaryDarkCl}"></Setter>
+                <Setter Property="Foreground" Value="{DynamicResource FontDarkCl}"></Setter>
+            </Style>
+        </Style>
+    </Style>
+    
+    <Style Selector="Button.error">
+        <Setter Property="Background" Value="{DynamicResource ErrorCl}" />
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource ErrorMediumLightCl}"></Setter>
+        </Style>
+        <Style Selector="^:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource ErrorDarkCl}"></Setter>
+        </Style>
+    </Style>
+
+    <Style Selector="Button.warning">
+        <Setter Property="Background" Value="{DynamicResource WarningCl}" />
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource WarningMediumLigthCl}"></Setter>
+        </Style>
+        <Style Selector="^:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource WarningDarkCl}"></Setter>
+        </Style>
+    </Style>
+
+    <Style Selector="Button.succsess">
+        <Setter Property="Background" Value="{DynamicResource SuccsessCl}" />
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource SuccsessMediumLightCl}"></Setter>
+        </Style>
+        <Style Selector="^:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource SuccsessDarkCl}"></Setter>
+        </Style>
+    </Style>
+
+    <Style Selector="Button.info">
+        <Setter Property="Background" Value="{DynamicResource InfoCl}"></Setter>
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource InfoMediumLightCl}"></Setter>
+        </Style>
+        <Style Selector="^:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource InfoDarkCl}"></Setter>
+        </Style>
+    </Style>
+
+    <Style Selector="Button.secondary">
+        <Setter Property="Background" Value="{DynamicResource SecondaryCl}" />
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource SecondaryMediumLigthCl}"></Setter>
+        </Style>
+        <Style Selector="^:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource SecondaryDarkCl}"></Setter>
+        </Style>
+    </Style>
+</Styles>

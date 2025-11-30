@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="MatrixCalculator/App.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Styles/DefaultStyles/Controls/AppDefaultStyles.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Styles/DefaultStyles/Controls/Button.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Styles/DefaultStyles/Themes/DarckColors.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Styles/DefaultStyles/Themes/DarkColors.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Styles/DefaultStyles/Themes/LightColors.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+        <entry key="MatrixCalculator/Views/MainWindow.axaml" value="MatrixCalculator/MatrixCalculator.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

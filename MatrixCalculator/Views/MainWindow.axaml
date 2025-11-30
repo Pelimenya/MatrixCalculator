@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MatrixCalculator.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="600"
+        x:Class="MatrixCalculator.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Калькулятор матриц">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*,*">
+        <!-- Матрица A -->
+        <StackPanel Grid.Column="0" Margin="8">
+            <TextBlock Text="Матрица A" FontWeight="Bold" />
+            <TextBox AcceptsReturn="True" Height="150" Text="{Binding MatrixAText, Mode=TwoWay}" />
+
+            <WrapPanel Margin="0,8,0,0">
+                <Button Classes="succsess" Content="Транспонировать" Command="{Binding TransposeCommand}" Margin="5"/>
+                <Button Classes="succsess" Content="Определитель" Command="{Binding DeterminantCommand}" Margin="5"/>
+                <Button Classes="succsess" Content="Обратная" Command="{Binding InverseCommand}" Margin="5"/>
+                <Button Classes="succsess" Content="Ранг" Command="{Binding RankCommand}" Margin="5"/>
+            </WrapPanel>
+        </StackPanel>
+
+        <!-- Матрица B -->
+        <StackPanel Grid.Column="1" Margin="8">
+            <TextBlock Text="Матрица B" FontWeight="Bold" />
+            <TextBox AcceptsReturn="True" Height="150" Text="{Binding MatrixBText, Mode=TwoWay}" />
+
+            <WrapPanel Margin="0,8,0,0">
+                <Button Classes="info" Content="A + B" Command="{Binding AddCommand}" Margin="5"/>
+                <Button Classes="info" Content="A – B" Command="{Binding SubtractCommand}" Margin="5"/>
+                <Button Classes="info" Content="A × B" Command="{Binding MultiplyCommand}" Margin="5"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,8,0,0">
+                <TextBox Width="60" Text="{Binding ScalarValue, Mode=TwoWay}" Margin="5"/>
+                <Button Classes="secondary" Content="A × число" Command="{Binding ScalarMultiplyCommand}"
+                        CommandParameter="{Binding ScalarValue}" Margin="5"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,8,0,0">
+                <TextBox Width="60" Text="{Binding PowerValue, Mode=TwoWay}" Margin="5"/>
+                <Button Classes="secondary" Content="A^n" Command="{Binding PowerCommand}"
+                        CommandParameter="{Binding PowerValue}" Margin="5"/>
+            </WrapPanel>
+        </StackPanel>
+
+        <!-- Результат -->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="8">
+            <TextBlock Text="Результат" FontWeight="Bold" Margin="5"/>
+            <TextBox AcceptsReturn="True" IsReadOnly="True" Height="220" Text="{Binding ResultText}" Margin="5"/>
+        </StackPanel>
+
+        <!-- Статус и справка -->
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="8" Spacing="10">
+            <TextBlock Text="{Binding StatusMessage}" VerticalAlignment="Center" />
+            <Button Classes="warning" Content="Справка" Command="{Binding ShowHelpCommand}" HorizontalAlignment="Right" />
+        </StackPanel>
+    </Grid>
+</Window>

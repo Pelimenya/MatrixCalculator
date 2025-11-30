@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <SolidColorBrush x:Key="PrimaryDarkCl" Color="#0e55e1"></SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryCl" Color="#4881f3"></SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryMediumLightCl" Color="#3373f2"></SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryLightCl" Color="#91b3f8"></SolidColorBrush>
+
+    <SolidColorBrush x:Key="WarningDarkCl" Color="#994d00"/>
+    <SolidColorBrush x:Key="WarningCl" Color="#e68800"/>
+    <SolidColorBrush x:Key="WarningMediumLigthCl" Color="#ff9900"/>
+    <SolidColorBrush x:Key="WarningLightCl" Color="#ffc87a"/>
+
+    <SolidColorBrush x:Key="AccentDarkCl" Color="#b09900"/>
+    <SolidColorBrush x:Key="AccentCl" Color="#ebc800"/>
+    <SolidColorBrush x:Key="AccentMediumLigthCl" Color="#f2d200"/>
+    <SolidColorBrush x:Key="AccentLightCl" Color="#f7e45a"/>
+
+    <SolidColorBrush x:Key="SuccsessDarkCl" Color="#2a4700"/>
+    <SolidColorBrush x:Key="SuccsessCl" Color="#5aa800"/>
+    <SolidColorBrush x:Key="SuccsessMediumLightCl" Color="#62b102"/>
+    <SolidColorBrush x:Key="SuccsessLightCl" Color="#98e634"/>
+
+    <SolidColorBrush x:Key="Succsess2DarkCl" Color="#2a4700"/>
+    <SolidColorBrush x:Key="Succsess2Cl" Color="#4c8e00"/>
+    <SolidColorBrush x:Key="Succsess2LightCl" Color="#98e634"/>
+
+    <SolidColorBrush x:Key="ErrorDarkCl" Color="#b80010"/>
+    <SolidColorBrush x:Key="ErrorCl" Color="#e0202f"/>
+    <SolidColorBrush x:Key="ErrorMediumLightCl" Color="#ff1a28"/>
+    <SolidColorBrush x:Key="ErrorClLightCl" Color="#ff5e6a"/>
+
+    <SolidColorBrush x:Key="InfoDarkCl" Color="#006b83"/>
+    <SolidColorBrush x:Key="InfoCl" Color="#00aace"/>
+    <SolidColorBrush x:Key="InfoMediumLightCl" Color="#00b5da"/>
+    <SolidColorBrush x:Key="InfoLightCl" Color="#66daf1"/>
+
+    <SolidColorBrush x:Key="SecondaryDarkCl" Color="#0a47c0"/>
+    <SolidColorBrush x:Key="SecondaryCl" Color="#3b72dc"/>
+    <SolidColorBrush x:Key="SecondaryMediumLigthCl" Color="#2965d8"/>
+    <SolidColorBrush x:Key="SecondaryLightCl" Color="#80a6f0"/>
+
+
+    <SolidColorBrush x:Key="NeutralCl" Color="#e8edf5"/>
+
+    <SolidColorBrush x:Key="White100Cl" Color="#0c1011"/>
+    <SolidColorBrush x:Key="White200Cl" Color="#1c1c26"/>
+    <SolidColorBrush x:Key="White300Cl" Color="#1d242c"/>
+    <SolidColorBrush x:Key="White400Cl" Color="#3d3d52"/>
+    <SolidColorBrush x:Key="White500Cl" Color="#6e7481"/>
+
+    <SolidColorBrush x:Key="Dark100Cl" Color="#f8f8fa"/>
+    <SolidColorBrush x:Key="Dark200Cl" Color="#f1f2f4"/>
+    <SolidColorBrush x:Key="Dark300Cl" Color="#e2e5e9"/>
+    <SolidColorBrush x:Key="Dark400Cl" Color="#d0d5db"/>
+    <SolidColorBrush x:Key="Dark500Cl" Color="#959ca9"/>
+
+    
+    <SolidColorBrush x:Key="FontLightCl" Color="#1c1c26"/>
+    <SolidColorBrush x:Key="FontDarkCl" Color="#f1f1f1"/>
+</ResourceDictionary>
